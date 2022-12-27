@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-purple: #290742;
+    --green: #4FFF4B;
+    --background-input: #170027;
+    --text-input: #FBF6FF;
+    --background-button: #9E6DC2;
+    --title: #9E6DC2;
+    --text-guide: #FBF6FF;
+    --text-link: #9E6DC2;
+    --background-article: #FBF7FF;
+    --subtitle: #290742;
+    --separation: #F2E7FA;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-purple);
+    align-items: center;
+    padding-left: 136.88px;
+    padding-top: 64px;
+    padding-right: 135px;
+    padding-bottom: 64px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 343px;
+}
+
+.menu ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+    text-decoration: none;
+    border-left: 2px solid var(--background-purple);
+    padding-left: 3px;
+}
+
+.menu ul li a:focus {
+    border-left: 2px solid var(--green);
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    width: 230px;
+    background-color: var(--background-input);
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+    padding-left: 25.65px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 25.65px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-input);
+}
+
+.search input:focus {
+    outline: 0;
+}
+
+.search button {
+    background-color: var(--background-button);
+    border: none;
+    cursor: pointer;
+}
+
+.search button img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "a b"
+        "c d"
+        "e e";
+}
+
+.guide {
+    grid-area: a;
+    background-color: var(--background-purple);
+}
+
+.guide div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 415px;
+    width: 569px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guide h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--title);
+}
+
+.guide p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-guide);
+    margin-top: 16px;
+}
+
+.guide div a {
+    text-decoration: none;
+    display: flex;
+    width: 112px;
+}
+
+.guide div a p {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-link);
+    margin-right: 8px;
+}
+
+.guide div a img {
+    margin-top: 20px;
+}
+
+.image {
+    grid-area: b;
+}
+
+.image div {
+    background-color: var(--background-purple);
+    height: 415px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hr-1 {
+    height: 6px;
+    background-color: var(--green);
+    border: none;
+}
+
+.post-1 {
+    grid-area: c;
+    background-color: var(--background-article);
+}
+
+.post-1 div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 569px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-1 div blockquote {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15.97px;
+}
+
+.post-1 div a {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--subtitle);
+    text-decoration: none;
+    margin-top: 15.97px;
+}
+
+.post-1 div p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-top: 15.97px;
+}
+
+.text {
+    grid-area: d;
+    background-color: var(--background-article);
+}
+
+.text div {
+    display: flex;
+    flex-direction: column;
+    width: 472px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-1 blockquote {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+    margin-top: 60px;
+}
+
+.text-1 a {
+    text-decoration: none;
+}
+
+.text-1 a h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--subtitle);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 8px;
+}
+
+.text-1 p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-top: 8px;
+}
+
+.hr-2 {
+    height: 1px;
+    color: var(--separation);
+    margin-top: 23.59px;
+}
+
+.text-2 blockquote {
+    margin-top: 23.96px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.text-2 a {
+    text-decoration: none;
+}
+
+.text-2 a h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--subtitle);
+    margin-top: 8px;
+}
+
+.text-2 p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.posts {
+    grid-area: e;
+    background-color: var(--background-article);
+}
+
+.posts div {
+    display: flex;
+    justify-content: center;
+    margin-top: 69.79px;
+}
+
+.post-2,
+.post-3,
+.post-4  {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+}
+
+.post-2,
+.post-3 {
+    margin-right: 30px;
+}
+
+.post-2 blockquote,
+.post-3 blockquote,
+.post-4 blockquote {
+    margin-top: 15.97px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.post-2 a,
+.post-3 a,
+.post-4 a {
+    text-decoration: none;
+}
+
+.post-2 a h2,
+.post-3 a h2,
+.post-4 a h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--subtitle);
+    margin-top: 8px;
+}
+
+.post-2 p,
+.post-3 p,
+.post-4 p {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-bottom: 67.58px;
+}
